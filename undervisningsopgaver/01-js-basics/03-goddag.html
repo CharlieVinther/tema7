@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <input type="text" id="name">
+    <input type="button" id="minKnap">
+    <script>
+        let name = document.querySelector("#name").value;
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("sidenVises");
+            minKnap.addEventListener("click", aktiverKnap);
+        }
+
+        function aktiverKnap() {
+            console.log("Goddag " + name);
+        }
+
+    </script>
+
+</body>
+
+</html>
