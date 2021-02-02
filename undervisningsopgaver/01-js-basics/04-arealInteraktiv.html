@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div>Angiv længde
+        <input type="text" id="længde">
+    </div>
+    <div>Angiv bredde
+        <input type="text" id="bredde">
+    </div>
+    <button>Klik og beregn arealet, klik i konsollen</button>
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked);
+
+
+
+        function buttonClicked() {
+            let bredde = document.querySelector("#længde").value;
+            let længde = document.querySelector("#bredde").value;
+            let areal = længde * bredde;
+            let resultat = `Længden er ${længde} meter og bredden er ${bredde} meter arealet er ${areal}`;
+            console.log(resultat);
+        }
+
+    </script>
+</body>
+
+</html>
